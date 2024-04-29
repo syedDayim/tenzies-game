@@ -1,4 +1,4 @@
-<h1 align="center" id="title">Shuraa Digital</h1>
+<h1 align="center" id="title">Tenzies Game</h1>
 
 <p align="center"><img src="https://socialify.git.ci/syedDayim/tenzies-game/image?font=KoHo&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Overlapping%20Hexagons&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
 
