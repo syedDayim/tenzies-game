@@ -1,16 +1,21 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-
+import Main from './components/Main'
+/**
+ * Challenge: Start a brand new React app!
+ * - Create a separate App component
+ * - Import and render the App component here
+ * - In the App component, render a <main> element
+ * - Style everything to look like the slide
+ */
 export default function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-     <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className='flex justify-center items-center border border-black h-screen'>
+     <Main />
+    </div>
     </>
   )
 }
