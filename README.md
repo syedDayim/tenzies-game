@@ -10,7 +10,7 @@
 
 <h2>Project Screenshots:</h2>
 
-"![Screenshot 2024-04-29 115649](https://github.com/syedDayim/tenzies-game/assets/90561337/e9af7b28-fa89-418b-8a0e-1ed8f21f712a)"
+![Screenshot 2024-04-29 115649](https://github.com/syedDayim/tenzies-game/assets/90561337/e9af7b28-fa89-418b-8a0e-1ed8f21f712a)
 
 <h2>🛠️ Installation Steps:</h2>
 
