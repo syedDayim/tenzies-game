@@ -2,6 +2,7 @@ import { React, useState, useEffect } from 'react'
 import './App.css'
 import Die from './components/Die'
 import { nanoid } from 'nanoid';
+import Confetti from 'react-confetti'
 
 
 export default function App() {
@@ -66,14 +67,18 @@ export default function App() {
   // to new dice each time the button is clicked
   function handleRoll() {
 
-    
     setDice(oldDice => oldDice.map( die => {
       return die.isHeld ? die : generateDie()
     }));
   }
+  function newGame(){
+    setDice(allNewDice())
+    setTenzies(false)
+  }
 
   return (
     <>
+    { tenzies && <Confetti/> }
       <div className='flex justify-center items-center border border-black h-screen'>
         <main className='flex flex-wrap flex-row gap-10 justify-center items-center h-[auto] w-96 bg-[#F5F5F5] rounded-[10px] p-4'>
           <div className='flex flex-col justify-center items-center gap-3'>
@@ -83,7 +88,7 @@ export default function App() {
           <div className='flex flex-wrap gap-5 justify-center font-bold'>
             { elements }
           </div>
-          <button className='w-[92.16px] h-[35.84px] bg-[#5035FF] text-white font-bold rounded-[3.81px]' onClick={handleRoll}>Roll</button>
+          <button className='w-[150px] h-[35.84px] bg-[#5035FF] text-white font-bold rounded-[3.81px]' onClick={tenzies ? newGame : handleRoll}>{ tenzies ? "New Game" : "Roll"}</button>
         </main>
       </div>
     </>
